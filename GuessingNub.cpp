@@ -5,14 +5,13 @@
 using namespace std;
 
 int main() {
-    int number , guess, attempts = 0;
-
+    int number, guess, attempts = 0;
 
     srand(time(0));
-    number =rand() % 100 +1;
+    number = rand() % 100 + 1;
 
     cout << "Welcome To The Number Guessing Game!\n";
-    cout << "I have Picked a number between 1 to  100.\n";
+    cout << "I have picked a number between 1 to 100.\n";
     cout << "Try To Guess It!\n";
 
     do {
@@ -20,19 +19,15 @@ int main() {
         cin >> guess;
         attempts++;
 
-        if (guess > number){
-        cout << "Too HIgh! TRy again.\n";
+        if (guess > number) {
+            cout << "Too High! Try again.\n";
         } else if (guess < number) {
-            cout << "Too low! Try Again.\n";
-
+            cout << "Too Low! Try again.\n";
+        } else {
+            cout << "🎉 Congratulations! You guessed the number in "
+                 << attempts << " attempts.\n";
         }
-        else {
-            cout << "Congratulations! YOu Guessed The Number in";
-            << attempts << " Attempts.\n";
-        }
-    
-    }
-     while (guess != number);
+    } while (guess != number);
 
-     return 0;
+    return 0;
 }

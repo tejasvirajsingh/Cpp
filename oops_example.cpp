@@ -51,7 +51,7 @@ class Bike : public Vehicle{
 
 int main(){
     Vehicle* v1 = new Car("BMW", 2025, 4);
-    vehicle* v2 = new Bike("Bullet", 2025, true);
+    Vehicle* v2 = new Bike("Bullet", 2025, true);
 
     v1->display();
     v2->display();
