@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int arr[5]  = {10, 20, 30, 40, 50};
+    int arr[5]  = {10, 25, 30, 40, 50};
 
     cout << "Array Elements are: 5 " << endl;
 
