@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Class (Encapsulation)
+
 
 class Vehicle {
     protected:
@@ -19,7 +19,6 @@ class Vehicle {
 
 };
 
-// Derived class.. (Inheritance)
 
 class Car: public Vehicle{
     int doors;
@@ -34,7 +33,7 @@ class Car: public Vehicle{
 
 };
 
-// another Class derived
+
 
 class Bike : public Vehicle{
     bool hasGear;
