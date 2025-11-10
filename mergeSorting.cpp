@@ -58,33 +58,33 @@ void mergeSort(std::vector<int>& arr, int left, int right) {
     int mid = left + (right - left) / 2; // Calculate the middle index
     
     // Sort first and second halves
-    mergeSort(arr, left, mid);
+      mergeSort(arr, left, mid);
     mergeSort(arr, mid + 1, right);
     
     // Merge the sorted halves
-    merge(arr, left, mid, right);
+       merge(arr, left, mid, right);
 }
 
 // Function to print the array (for testing)
 void printArray(const std::vector<int>& arr) {
     for (int x : arr) {
-        std::cout << x << " ";
+        std::cout << x << "  ";
     }
     std::cout << std::endl;
 }
 
-// Driver code to test the function
+
 int main() {
-    std::vector<int> arr = {12, 11, 13, 5, 6, 7};
+    std::vector<int> arr = {12, 4, 13, 5, 6, 7};
     int arr_size = arr.size();
 
-    std::cout << "Given array is \n";
+    std::cout << "Given array is: \n";
     printArray(arr);
 
     // Call the Merge Sort function
     mergeSort(arr, 0, arr_size - 1);
 
-    std::cout << "\nSorted array is \n";
+    std::cout << "\nSorted array is: \n";
     printArray(arr);
     
     return 0;
