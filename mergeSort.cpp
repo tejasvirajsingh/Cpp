@@ -22,7 +22,7 @@ void merge(int arr[], int left, int mid, int right) {
     while (i < n1)
         arr[k++] = L[i++];
  // COndition applied HEre.
- 
+
     while (j < n2)
         arr[k++] = R[j++];
 }
@@ -48,7 +48,7 @@ int main() {
 
     mergeSort(arr, 0, n - 1);
 
-    cout << "Sorted array: ";
+    cout << "Sorted array : ";
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << endl;
