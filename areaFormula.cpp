@@ -4,13 +4,17 @@ using namespace std;
 int main() {
     int choice;
     float radius, length, width, side;
+ 
 
+    // Take a decision about this area section.
+    
     cout << "===== Area Calculator =====\n";
     cout << "1. Area of Circle\n";
     cout << "2. Area of Rectangle\n";
     cout << "3. Area of Square\n";
     cout << "Enter your choice (1-3): ";
     cin >> choice;
+   // make It Optional;
 
     switch (choice) {
         case 1:
