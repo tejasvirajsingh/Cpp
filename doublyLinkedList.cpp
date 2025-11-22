@@ -22,7 +22,7 @@ public:
         head = nullptr;
     }
 
-    void insertFront(int value) {
+     void insertFront(int value) {
         Node* newNode = new Node(value);
         if (head != nullptr) {
             newNode->next = head;
@@ -37,19 +37,21 @@ public:
             head = newNode;
             return;
         }
-        Node* temp = head;
+         Node* temp = head;
         while (temp->next != nullptr)
             temp = temp->next;
         temp->next = newNode;
         newNode->prev = temp;
     }
 
-    void deleteNode(int value) {
+    void deleteNode(int value)  
+    {
         Node* temp = head;
         while (temp != nullptr && temp->data != value)
             temp = temp->next;
 
-        if (temp == nullptr) {
+        if (temp == nullptr) 
+         {
             cout << "Value not found!\n";
             return;
         }
@@ -84,7 +86,7 @@ public:
 
         cout << "Backward: ";
         while (temp != nullptr) {
-            cout << temp->data << " ";
+            cout << temp->data << "  ";
             temp = temp->prev;
         }
         cout << endl;
