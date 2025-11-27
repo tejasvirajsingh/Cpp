@@ -6,6 +6,6 @@ using namespace std;
 
 int main() {
     PlaySound(TEXT("sound.wav"), NULL, SND_FILENAME | SND_ASYNC);
-    cout << " MR Max Kaya Haii..." << endl;
+    cout << " MR Max Kaya Haii...  " << endl;
     return 0;
 }
