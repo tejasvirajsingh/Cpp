@@ -16,7 +16,6 @@ int main()
     st.push(44);
 
     st.pop();
-
     cout << st.size() << endl;
     cout << st.top();
 }
