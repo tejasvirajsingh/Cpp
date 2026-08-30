@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int nums[] = {5, 3,4, 7,8,9,1,3,9, 1, 17};
-    int n = nums.size();
+    int n = sizeof(nums) / sizeof(nums[0]);
 
     int min = nums[0];
     int max = nums[0];
