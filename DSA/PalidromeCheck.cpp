@@ -1,14 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main()
+{
 
     int T;
 
     cout << "Enter number of test cases: ";
     cin >> T;
 
-    while (T--) {
+    while (T--)
+    {
 
         int n;
 
@@ -18,15 +20,19 @@ int main() {
         int original = n;
         int reversed = 0;
 
-        while (n != 0) {
+        while (n != 0)
+        {
             int digit = n % 10;
             reversed = reversed * 10 + digit;
             n = n / 10;
         }
 
-        if (original == reversed) {
+        if (original == reversed)
+        {
             cout << "Yes" << endl;
-        } else {
+        }
+        else
+        {
             cout << "No" << endl;
         }
     }
