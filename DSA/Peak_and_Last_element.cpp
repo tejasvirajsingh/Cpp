@@ -18,7 +18,7 @@ int main() {
             cin >> arr[i];
         }
 
-        // Your logic
+       
         int first = -1;
         int last = -1;
 
