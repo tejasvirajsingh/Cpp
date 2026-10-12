@@ -45,7 +45,7 @@ int main() {
         int nx = x;
         int ny = y;
 
-        if (cmd.direction == "top")
+        if (cmd.direction == "tops")
             ny++;
         else if (cmd.direction == "down")
             ny--;
