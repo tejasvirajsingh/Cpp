@@ -25,14 +25,15 @@ int main() {
     for (int x : result1) cout << x << " ";
     cout << endl;
 
-    // Test Case 2
+    
+    
     vector<int> arr2 = {1, -2, 3,0,2,3,6,4,3,-3,0,2, -4, 5, -6};
     vector<int> result2 = moveNegative(arr2);
     cout << "Test Case 2: ";
     for (int x : result2) cout << x << " ";
     cout << endl;
 
-    // Test Case 3
+    
     vector<int> arr3 = {-1, -2, -3, 4, 5};
     vector<int> result3 = moveNegative(arr3);
     cout << "Test Case 3: ";
